@@ -47,7 +47,7 @@ class Home extends CI_Controller{
 
         }else if($_POST['check_order_status']){
 
-            redirect('#');
+            redirect('invoice/checkOrderStatus');
 
         }else if($_POST['check_out']){
 

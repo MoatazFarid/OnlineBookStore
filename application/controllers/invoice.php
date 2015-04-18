@@ -42,4 +42,28 @@ class Invoice extends CI_Controller{
 //        redirect(home/index);
 
     }
+
+    /**
+     *This function should view the check Order Status no 4 phase 2
+     */
+    public function checkOrderStatus(){
+        $this->load->model('order_model');
+        $order= $this->order_model->getOrdersOfMember();
+
+        // set no_order to null
+        $data['no_order'] = null;
+        // get user name
+        $this->load->model('login_model');
+        $data['username'] = $this->login_model->getUserName();
+
+        if($order != null )
+        {
+            $data['order'] = $order;
+        }
+        else{
+            $data['no_order']= "can't check order state !! ";
+        }
+
+        $this->load->view('checkOrderStatus_view',$data);
+    }
 }

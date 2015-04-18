@@ -251,7 +251,7 @@ class Order_model extends CI_Model{
         $query = $this->db->query($sql,array($userid));
 
         if($query->num_rows >= 0){
-            return $query;
+            return $query->result();
         }else{
             return null;
         }

@@ -47,4 +47,28 @@ class Login_model extends CI_Model{
             return false;
         }
     }
+
+    /**
+     *This function should return full user name of the logged user id
+     */
+    public function getUserName(){
+
+        // get userid from session
+
+        $userid=$this->session->userdata('userid');
+
+        $sql = 'select `fname`, `lname` from `members` where `userid` =? ';
+        $query = $this->db->query($sql ,array($userid));
+
+        /// get query results
+        $username = null;
+        foreach($query->result() as $row){
+            $fname = $row->fname;
+            $lname = $row->lname;
+
+            $username = $fname ." ". $lname;
+        }
+
+        return $username;
+    }
 }
