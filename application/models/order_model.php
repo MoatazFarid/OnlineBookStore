@@ -37,6 +37,7 @@ class Order_model extends CI_Model{
 
         // ono no
         $ono = $this->generateOno();
+        $this->session->set_userdata('OrderNo', $ono);
 
         // get data of member
         $sql = 'SELECT `zip`,`state`,`city`,`address` from `members` where `userid` = ?';
@@ -69,7 +70,6 @@ class Order_model extends CI_Model{
         $sql = 'select `ono` from orders where `userid` = ?';
         $query = $this->db->query($sql,array($userid));
         if($query->num_rows >0){
-            $this->session->set_userdata('OrderNo', $query->row()->ono);
             return true;
         }else{
             return false;
@@ -118,6 +118,24 @@ class Order_model extends CI_Model{
         $sql2 = 'delete from `cart` where `userid` = ?';
         $query1 = $this->db->query($sql2, array($userid));
     }
+    /**
+     *          getODetails()
+     * get ono from user in checkorderstate_view
+     * get ISBN ,Title,  $,Qty from books and odetails
+     * tables
+     */
+    public function getODetails(){
+        //get user id from session
+        $userid =$this->session->userdata('userid');
+        $ono =$this->input->post('reqOrderNo_checkOrderStatus');
+
+
+        // prepare and execute sql to gett data from cart
+        $sql ='select * from `odetails` `od`, `books` `b`, `orders` `o` where o.`userid` = ? and od.`ono` = o.`ono` and od.`isbn` = b.`isbn` and od.`ono` = ?';
+        $query = $this->db->query($sql, array($userid , $ono));
+
+        return $query->result();
+    }
 
     /**
      *           generateOno()
@@ -137,70 +155,6 @@ class Order_model extends CI_Model{
         return $random;
 
     }
-
-/*
-    public function doOrder(){
-        //get user id from session
-        $userid =$this->session->userdata('userid');
-
-
-        // prepare statement to get order no from order $sql3
-        $sql3 = 'select `ono` from `orders` where `userid` = ?';
-        //execute $sql3
-        $quary3 = $this->db->query($sql3,array($userid));
-
-        $ono = $quary3->row();
-
-
-        //order items
-//        prepare query
-        $sql6 = 'select c.`isbn` , c.`qty` , o.`ono` , b.`price`
-                    from `cart`  c, `orders` o , `books`  b , `members`  m
-                    where
-                          c.`userid` = ? AND
-                          m.`userid` = c.`userid` AND
-                          c.`isbn` = b.`isbn` AND
-                          o.`userid` = m.`userid`';
-//        execute query
-        $quary6 = $this->db->query($sql6 , array($userid));
-
-        if($quary6->num_rows >= 1 ){
-
-            // prepare statement to to set data of member to order table $sql2
-            $sql2 = 'insert into `orders` (`userid`,`shipZip`,`shipState`,`shipCity`,`shipAddress`)'.
-                '(SELECT `userid`,`zip`,`state`,`city`,`address` from `members` where `userid` = ?)';
-            //execute $sql2
-
-            $quary2 = $this->db->query($sql2,array($userid));
-
-            // prepare statement to to set data of member to ordetails table $sql4
-            $sql4 = 'insert into `odetails` (`isbn`,`qty`,`ono`,`price`)
-                (
-                  select c.`isbn` , c.`qty` , o.`ono` , b.`price`
-                  from `cart`  c, `orders` o , `books`  b , `members`  m
-                  where
-                     c.`userid` = ? AND
-                     m.`userid` = c.`userid` AND
-                     c.`isbn` = b.`isbn` AND
-                     o.`userid` = m.`userid`
-                )';
-            //execute $sql4
-            $quary4 = $this->db->query($sql4 , array($userid));
-
-
-            //prepare statement to empty the cart table $sql5
-            $sql5 = 'DELETE FROM `cart` WHERE `userid`= ?';
-            //execute statement to empty table $sql5
-            $query5 = $this->db->query($sql5, array($userid));
-            return true;
-        }else{
-//            no items in cart to be transfered to order
-            return false;
-        }
-
-
-    }
-**/
 
     /**
      * this function returns a query result contains
@@ -229,6 +183,35 @@ class Order_model extends CI_Model{
 
         if($query->num_rows >= 0){
             return $query;
+        }else{
+            return null;
+        }
+    }
+    /**
+     *          getShippingDetails()
+     * this function returns a query result contains
+     *  shipAddress , shipCity , shipped , shipState
+     * , shipZip , zip , address, city , state
+     *
+     */
+    public function getShippingDetails(){
+
+        // get userid from session
+        $userid=$this->session->userdata('userid');
+        $ono =$this->input->post('reqOrderNo_checkOrderStatus');
+
+
+        // prepare query to list all orders of that member
+        $sql ='select o.`shipAddress` ,o.`ono`, o.`shipCity` , o.`shipped` , o.`shipState` , o.`shipZip` , m.`zip` , m.`address`, m.`city` , m.`state`
+                from `members` `m`, `orders` `o`
+                where m.`userid` = ? AND
+                    o.ono = ? AND
+                    o.userid = m.userid';
+        // execute that query
+        $query = $this->db->query($sql,array($userid,$ono));
+
+        if($query->num_rows >= 0){
+            return $query->row();
         }else{
             return null;
         }

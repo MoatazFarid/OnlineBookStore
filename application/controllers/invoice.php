@@ -43,6 +43,31 @@ class Invoice extends CI_Controller{
 
     }
 
+    public function getOrderDetails(){
+        $this->load->model('order_model');
+        $ShippingDetails = $this->order_model->getShippingDetails();
+        $data['no_order'] = null;
+        $orderDetails = $this->order_model->getODetails();
+    // get user name
+    $this->load->model('login_model');
+    $data['username'] = $this->login_model->getUserName();
+
+    if($ShippingDetails != null && $orderDetails != null)
+        {
+            $data['invoice'] =$ShippingDetails;
+//            insert a array of objects
+            $data['invoice2'] =$orderDetails;
+        }
+
+        else{
+            $data['no_order']= "can't get order details !! ";
+        }
+
+        $this->load->view('orderDetails_view',$data);
+//        redirect(home/index);
+
+    }
+
     /**
      *This function should view the check Order Status no 4 phase 2
      */
@@ -61,9 +86,10 @@ class Invoice extends CI_Controller{
             $data['order'] = $order;
         }
         else{
-            $data['no_order']= "can't check order state !! ";
+            $data['no_order']= "can't check order Status !! ";
         }
 
         $this->load->view('checkOrderStatus_view',$data);
     }
+
 }
