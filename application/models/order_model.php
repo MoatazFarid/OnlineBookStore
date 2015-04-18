@@ -11,7 +11,7 @@
  * بس الأوردر الجديد مش بينزل في جدول ال odetails
  * we need a solution 14/4/2015 at 1:05 AM
  * -------------------------------------------------------------------
- *
+ *solved 18/4/2015 at 12:40 PM
  */
 class Order_model extends CI_Model{
     function __construct(){
@@ -59,6 +59,23 @@ class Order_model extends CI_Model{
     }
 
     /**
+     * This will check if there are any orders exists in orders for that user id
+     */
+    private function isOrderExists(){
+        //get user id from session
+        $userid =$this->session->userdata('userid');
+
+        // prepare and execute the order
+        $sql = 'select `ono` from orders where `userid` = ?';
+        $query = $this->db->query($sql,array($userid));
+        if($query->num_rows >0){
+            $this->session->set_userdata('OrderNo', $query->row()->ono);
+            return true;
+        }else{
+            return false;
+        }
+    }
+    /**
      *          createODetails()
      * get ono from setorder function
      * get the isbn and qty of the user from cart
@@ -69,8 +86,17 @@ class Order_model extends CI_Model{
         //get user id from session
         $userid =$this->session->userdata('userid');
 
-        // get order number
-        $ono = $this->setOrder();
+        // we will check if there are any orders exists in orders for that user id
+        // if there is an order we will take order no only from user session , if no order exists ,
+        /// we will create a new order and set ono in userdata
+        if($this->isOrderExists()){
+            $ono = $this->session->userdata('OrderNo');
+
+        }else{
+            // get order number
+            $ono = $this->setOrder();
+
+        }
 
         // prepare and execute sql to gett data from cart
         $sql ='select * from `cart` `c`, `books` `b` where c.`userid` = ? and c.`isbn` = b.`isbn` ';
