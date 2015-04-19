@@ -39,7 +39,7 @@ class Home extends CI_Controller{
 
         }else if($_POST['search_author_title_subject']){
 
-            redirect('#');
+            redirect('search/searchBy');
 
         }else if($_POST['view_edit_cart']){
 
