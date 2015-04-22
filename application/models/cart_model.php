@@ -10,12 +10,7 @@ class cart_model extends CI_Model{
         parent::__construct();
     }
 
-    function addToCart(){
-        // get user input
-        $isbn = $this->security->xss_clean($this->input->post('book_isbn'));
-        $qty = $this->security->xss_clean($this->input->post('book_isbn_qty'));
-        $userid = $this->session->userdata('userid');
-
+    function addToCart($userid,$isbn,$qty){
         // check that the book isn't in cart
         if($this->isInCart()){
             $oldqty = $this->getOldQuantity();

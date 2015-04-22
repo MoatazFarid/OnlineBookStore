@@ -75,6 +75,13 @@
             </tr>
         <?php }?>
     </table>
+        <form method="post" action="<?php echo base_url() ?>index.php/chooseSubject/addToCart">
+            <h3>Enter ISBN </h3>
+            <input type="text" placeholder="Enter ISBN to Add to cart " name="book_isbn" width="10">
+            <input type="number" name="book_isbn_qty" width="5">
+            <input type="submit"  value="Add To Cart">
+        </form>
+
     <?php }else{ echo $isAvailable;}?>
     <h3><a href="../home">Return Home</a></h3>
     <!--    incase we can't create the search-->

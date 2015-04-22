@@ -42,8 +42,14 @@ class ChooseSubject extends CI_Controller{
     }
 
     public function addToCart(){
+
+        // get user input
+        $isbn = $this->security->xss_clean($this->input->post('book_isbn'));
+        $qty = $this->security->xss_clean($this->input->post('book_isbn_qty'));
+        $userid = $this->session->userdata('userid');
+
         $this->load->model('cart_model');
-        $this->cart_model->addToCart();
+        $this->cart_model->addToCart($userid,$isbn,$qty);
 //        load home view
         $this->load->view('home_view');
 
