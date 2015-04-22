@@ -49,6 +49,7 @@ class ChooseSubject extends CI_Controller{
         $userid = $this->session->userdata('userid');
 
         $this->load->model('cart_model');
+        // add to cart
         $this->cart_model->addToCart($userid,$isbn,$qty);
 //        load home view
         $this->load->view('home_view');
