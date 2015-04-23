@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7708c9c3-1001-48cb-8db7-5de4e8b41347" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/shopingCart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/shopingCart_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/cart_model.php" afterPath="$PROJECT_DIR$/application/models/cart_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/chooseSubject.php" afterPath="$PROJECT_DIR$/application/controllers/chooseSubject.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/search_view.php" afterPath="$PROJECT_DIR$/application/views/search_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home.php" afterPath="$PROJECT_DIR$/application/controllers/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/invoice.php" afterPath="$PROJECT_DIR$/application/controllers/invoice.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="onlinebookstore.iws" />
@@ -25,92 +26,76 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="onlinebookstore" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="invoice.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/invoice.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1538463" vertical-offset="290" max-vertical-offset="663">
-              <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-              <folding>
-                <element signature="n#oneClkCheckOut#0;n#Invoice#0;n#!!top" expanded="false" />
-                <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-                <element signature="n#checkOrderStatus#0;n#Invoice#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/order_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.53846" vertical-offset="317" max-vertical-offset="1513">
-              <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
-              <folding>
-                <element signature="n#setOrder#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#isOrderExists#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#createODetails#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#getODetails#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#generateOno#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#invoiceData#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#getShippingDetails#0;n#Order_model#0;n#!!top" expanded="false" />
-                <element signature="n#getOrdersOfMember#0;n#Order_model#0;n#!!top" expanded="false" />
-                <marker date="1429388480629" expanded="true" signature="1223:1294" placeholder="SELECT `zip`..." />
-                <marker date="1429388480629" expanded="true" signature="1646:1691" placeholder="insert into ..." />
-                <marker date="1429388480629" expanded="true" signature="2161:2204" placeholder="select `ono`..." />
-                <marker date="1429388480629" expanded="true" signature="3234:3316" placeholder="select * fro..." />
-                <marker date="1429388480629" expanded="true" signature="3617:3656" placeholder="insert into ..." />
-                <marker date="1429388480629" expanded="true" signature="3805:3842" placeholder="delete from ..." />
-                <marker date="1429388480629" expanded="true" signature="4337:4479" placeholder="select * fro..." />
-                <marker date="1429388480629" expanded="true" signature="4868:4906" placeholder="select * fro..." />
-                <marker date="1429388480629" expanded="true" signature="5632:6096" placeholder="select od.`i..." />
-                <marker date="1429388480629" expanded="true" signature="6788:7087" placeholder="select o.`sh..." />
-                <marker date="1429388480629" expanded="true" signature="7600:7641" placeholder="select * fro..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chooseSubject.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/chooseSubject.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.730769" vertical-offset="196" max-vertical-offset="765">
-              <caret line="51" column="56" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="56" />
-              <folding>
-                <element signature="n#check_isvalidated#0;n#ChooseSubject#0;n#!!top" expanded="false" />
-                <element signature="n#getSubject#0;n#ChooseSubject#0;n#!!top" expanded="false" />
-                <element signature="n#getBooksFromSubject#0;n#ChooseSubject#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/search_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="1088" max-vertical-offset="1666">
-              <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cart_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/cart_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47989276" vertical-offset="93" max-vertical-offset="1717">
-              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.6252505" vertical-offset="1949" max-vertical-offset="3026">
+              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding>
-                <marker date="1429698011257" expanded="true" signature="754:787" placeholder="INSERT into ..." />
-                <marker date="1429698011257" expanded="true" signature="1097:1134" placeholder="select * fro..." />
-                <marker date="1429698011257" expanded="true" signature="1596:1633" placeholder="select * fro..." />
-                <marker date="1429698011257" expanded="true" signature="1987:2025" placeholder="select * fro..." />
+                <marker date="1429824355439" expanded="true" signature="479:603" placeholder="select c.`is..." />
+                <marker date="1429824355439" expanded="true" signature="1490:1523" placeholder="INSERT into ..." />
+                <marker date="1429824355439" expanded="true" signature="1846:1883" placeholder="select * fro..." />
+                <marker date="1429824355439" expanded="true" signature="2396:2433" placeholder="select * fro..." />
+                <marker date="1429824355439" expanded="true" signature="3296:3331" placeholder="delete from ..." />
+                <marker date="1429824355439" expanded="true" signature="3787:3825" placeholder="select * fro..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopingCart.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/shopingCart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.653846" vertical-offset="691" max-vertical-offset="1190">
+              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+              <folding>
+                <element signature="n#check_isvalidated#0;n#ShopingCart#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.0" vertical-offset="759" max-vertical-offset="1258">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+              <folding>
+                <element signature="n#index#0;n#Home#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoice.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/invoice.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.692308" vertical-offset="79" max-vertical-offset="1700">
+              <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopingCart_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/shopingCart_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="1292" max-vertical-offset="1853">
+              <caret line="91" column="98" selection-start-line="91" selection-start-column="98" selection-end-line="91" selection-end-column="98" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,13 +123,15 @@
         <option value="$PROJECT_DIR$/application/models/login_model.php" />
         <option value="$PROJECT_DIR$/application/views/checkOrderStatus_view.php" />
         <option value="$PROJECT_DIR$/application/views/orderDetails_view.php" />
-        <option value="$PROJECT_DIR$/application/controllers/invoice.php" />
-        <option value="$PROJECT_DIR$/application/models/order_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/home.php" />
         <option value="$PROJECT_DIR$/application/models/search_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/search.php" />
         <option value="$PROJECT_DIR$/application/views/search_view.php" />
         <option value="$PROJECT_DIR$/application/controllers/chooseSubject.php" />
+        <option value="$PROJECT_DIR$/application/controllers/home.php" />
+        <option value="$PROJECT_DIR$/application/controllers/invoice.php" />
+        <option value="$PROJECT_DIR$/application/models/order_model.php" />
+        <option value="$PROJECT_DIR$/application/views/shopingCart_view.php" />
+        <option value="$PROJECT_DIR$/application/controllers/shopingCart.php" />
         <option value="$PROJECT_DIR$/application/models/cart_model.php" />
       </list>
     </option>
@@ -182,7 +169,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -346,6 +333,19 @@
       <option name="number" value="Default" />
       <updated>1428766560795</updated>
     </task>
+    <task id="LOCAL-00001" summary="phase 3 : finished the following &#10;&#10;2. Search by Author/Title&#10;       This option should provide 3 sub-options:&#10;          1. Author Search&#10;          2. Title Search&#10;          3. Go Back to Member Menu&#10;       In the Author or Title search sub-option, the user may&#10;         enter a substring and the system should respond with all&#10;         books which contain the substring in the title/author.&#10;         The display should be done as in HW5 (2 books at a time on a screen)&#10;         Allow user to enter isbn to put in cart; &#10;">
+      <created>1429698206891</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1429698206891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="v 1.2.0 &#10;&#10;edits made : addtocart function in cart_model edited to add arguments">
+      <created>1429698385051</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1429698385051</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -375,20 +375,21 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18740849" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20204978" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13050315" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
@@ -408,31 +409,17 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="phase 3 : finished the following &#10;&#10;2. Search by Author/Title&#10;       This option should provide 3 sub-options:&#10;          1. Author Search&#10;          2. Title Search&#10;          3. Go Back to Member Menu&#10;       In the Author or Title search sub-option, the user may&#10;         enter a substring and the system should respond with all&#10;         books which contain the substring in the title/author.&#10;         The display should be done as in HW5 (2 books at a time on a screen)&#10;         Allow user to enter isbn to put in cart; &#10;" />
+    <MESSAGE value="v 1.2.0 &#10;&#10;edits made : addtocart function in cart_model edited to add arguments" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.2.0 &#10;&#10;edits made : addtocart function in cart_model edited to add arguments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1394">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/invoice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="850">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/order_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4522">
@@ -458,9 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1088">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,9 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="850">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,9 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="850">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,9 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="241" max-vertical-offset="850">
           <caret line="29" column="50" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="50" />
-          <folding>
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,9 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9862543" vertical-offset="55" max-vertical-offset="935">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/welcome_message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
@@ -679,31 +644,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/home_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4920914" vertical-offset="366" max-vertical-offset="1037">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/login_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26288658" vertical-offset="0" max-vertical-offset="582">
           <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/checkOrderStatus_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="574" max-vertical-offset="1156">
-          <caret line="44" column="90" selection-start-line="44" selection-start-column="90" selection-end-line="44" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/orderDetails_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="2397">
-          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -721,37 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/chooseSubject_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4896908" vertical-offset="0" max-vertical-offset="1496">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19759451" vertical-offset="812" max-vertical-offset="1394">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14938489" vertical-offset="374" max-vertical-offset="1411">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/search_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="850">
           <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <marker date="1429452364998" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1429452364998" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1429452364998" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-            <marker date="1429452364998" expanded="true" signature="-1:-1" placeholder="Select * fro..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,81 +676,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.425" vertical-offset="153" max-vertical-offset="3570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/invoice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1538463" vertical-offset="290" max-vertical-offset="663">
-          <caret line="70" column="7" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
-          <folding>
-            <element signature="n#oneClkCheckOut#0;n#Invoice#0;n#!!top" expanded="false" />
-            <element signature="n#getOrderDetails#0;n#Invoice#0;n#!!top" expanded="false" />
-            <element signature="n#checkOrderStatus#0;n#Invoice#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/order_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.53846" vertical-offset="317" max-vertical-offset="1513">
-          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
-          <folding>
-            <element signature="n#setOrder#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#isOrderExists#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#createODetails#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#getODetails#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#generateOno#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#invoiceData#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#getShippingDetails#0;n#Order_model#0;n#!!top" expanded="false" />
-            <element signature="n#getOrdersOfMember#0;n#Order_model#0;n#!!top" expanded="false" />
-            <marker date="1429388480629" expanded="true" signature="1223:1294" placeholder="SELECT `zip`..." />
-            <marker date="1429388480629" expanded="true" signature="1646:1691" placeholder="insert into ..." />
-            <marker date="1429388480629" expanded="true" signature="2161:2204" placeholder="select `ono`..." />
-            <marker date="1429388480629" expanded="true" signature="3234:3316" placeholder="select * fro..." />
-            <marker date="1429388480629" expanded="true" signature="3617:3656" placeholder="insert into ..." />
-            <marker date="1429388480629" expanded="true" signature="3805:3842" placeholder="delete from ..." />
-            <marker date="1429388480629" expanded="true" signature="4337:4479" placeholder="select * fro..." />
-            <marker date="1429388480629" expanded="true" signature="4868:4906" placeholder="select * fro..." />
-            <marker date="1429388480629" expanded="true" signature="5632:6096" placeholder="select od.`i..." />
-            <marker date="1429388480629" expanded="true" signature="6788:7087" placeholder="select o.`sh..." />
-            <marker date="1429388480629" expanded="true" signature="7600:7641" placeholder="select * fro..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/chooseSubject.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.730769" vertical-offset="196" max-vertical-offset="765">
-          <caret line="51" column="56" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="56" />
-          <folding>
-            <element signature="n#check_isvalidated#0;n#ChooseSubject#0;n#!!top" expanded="false" />
-            <element signature="n#getSubject#0;n#ChooseSubject#0;n#!!top" expanded="false" />
-            <element signature="n#getBooksFromSubject#0;n#ChooseSubject#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.6595174" vertical-offset="298" max-vertical-offset="782">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/checkOrderStatus_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46648794" vertical-offset="574" max-vertical-offset="1156">
+          <caret line="44" column="90" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/chooseSubject_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.233244" vertical-offset="766" max-vertical-offset="1496">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/orderDetails_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-56.846153" vertical-offset="681" max-vertical-offset="2397">
+          <caret line="127" column="12" selection-start-line="55" selection-start-column="4" selection-end-line="127" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84182304" vertical-offset="213" max-vertical-offset="1037">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/search_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="1088" max-vertical-offset="1666">
+        <state vertical-scroll-proportion="0.749499" vertical-offset="986" max-vertical-offset="1666">
           <caret line="80" column="52" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5230461" vertical-offset="79" max-vertical-offset="935">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/order_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3148148" vertical-offset="2040" max-vertical-offset="4233">
+          <caret line="129" column="45" selection-start-line="129" selection-start-column="45" selection-end-line="129" selection-end-column="45" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="SELECT `zip`..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select `ono`..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select od.`i..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select o.`sh..." />
+            <marker date="1429388480629" expanded="true" signature="-1:-1" placeholder="select * fro..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.0" vertical-offset="759" max-vertical-offset="1258">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding>
+            <element signature="n#index#0;n#Home#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/invoice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.692308" vertical-offset="79" max-vertical-offset="1700">
+          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/shopingCart_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="1292" max-vertical-offset="1853">
+          <caret line="91" column="98" selection-start-line="91" selection-start-column="98" selection-end-line="91" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/shopingCart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.653846" vertical-offset="691" max-vertical-offset="1190">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="n#check_isvalidated#0;n#ShopingCart#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17034069" vertical-offset="374" max-vertical-offset="1411">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/cart_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47989276" vertical-offset="93" max-vertical-offset="1717">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.6252505" vertical-offset="1949" max-vertical-offset="3026">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
-            <marker date="1429698011257" expanded="true" signature="754:787" placeholder="INSERT into ..." />
-            <marker date="1429698011257" expanded="true" signature="1097:1134" placeholder="select * fro..." />
-            <marker date="1429698011257" expanded="true" signature="1596:1633" placeholder="select * fro..." />
-            <marker date="1429698011257" expanded="true" signature="1987:2025" placeholder="select * fro..." />
+            <marker date="1429824355439" expanded="true" signature="479:603" placeholder="select c.`is..." />
+            <marker date="1429824355439" expanded="true" signature="1490:1523" placeholder="INSERT into ..." />
+            <marker date="1429824355439" expanded="true" signature="1846:1883" placeholder="select * fro..." />
+            <marker date="1429824355439" expanded="true" signature="2396:2433" placeholder="select * fro..." />
+            <marker date="1429824355439" expanded="true" signature="3296:3331" placeholder="delete from ..." />
+            <marker date="1429824355439" expanded="true" signature="3787:3825" placeholder="select * fro..." />
           </folding>
         </state>
       </provider>

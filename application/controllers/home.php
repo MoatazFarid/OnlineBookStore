@@ -43,7 +43,7 @@ class Home extends CI_Controller{
 
         }else if($_POST['view_edit_cart']){
 
-            redirect('#');
+            redirect('shopingCart/viewCart');
 
         }else if($_POST['check_order_status']){
 

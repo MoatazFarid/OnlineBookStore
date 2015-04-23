@@ -48,11 +48,11 @@ class Invoice extends CI_Controller{
         $ShippingDetails = $this->order_model->getShippingDetails();
         $data['no_order'] = null;
         $orderDetails = $this->order_model->getODetails();
-    // get user name
-    $this->load->model('login_model');
-    $data['username'] = $this->login_model->getUserName();
+        // get user name
+        $this->load->model('login_model');
+        $data['username'] = $this->login_model->getUserName();
 
-    if($ShippingDetails != null && $orderDetails != null)
+        if($ShippingDetails != null && $orderDetails != null)
         {
             $data['invoice'] =$ShippingDetails;
 //            insert a array of objects
