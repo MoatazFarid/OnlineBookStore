@@ -32,6 +32,7 @@ class ShopingCart extends CI_Controller{
         }
     }
 
+
     function OperateOnCart(){
 //        filter inputs
         $isbn = $this->security->xss_clean($this->input->post('ISBN'));
@@ -39,6 +40,7 @@ class ShopingCart extends CI_Controller{
 
         $this->load->model('cart_model');
         $data['msg'] = null;
+        $data['result']= null;
 
         if(!is_null($isbn)){
             if($this->input->post('delete_edit_item')== 'delete'){
@@ -62,7 +64,7 @@ class ShopingCart extends CI_Controller{
 
             }
         }
-        redirect('shopingCart/viewCart');
+        //redirect('shopingCart/viewCart');
         $this->load->view('shopingCart_view',$data);
     }
 }
