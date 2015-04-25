@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7708c9c3-1001-48cb-8db7-5de4e8b41347" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/PerInfo_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/editPInfo_view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/personalInfo_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/home.php" afterPath="$PROJECT_DIR$/application/controllers/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/login_view.php" afterPath="$PROJECT_DIR$/application/views/login_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/personalInfo.php" afterPath="$PROJECT_DIR$/application/controllers/personalInfo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/registration_view.php" afterPath="$PROJECT_DIR$/application/views/registration_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="onlinebookstore.iws" />
@@ -420,7 +413,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429959081938</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v 1.2.6&#10;&#10;beta Version&#10;&#10;&#10;">
+      <created>1429976922961</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1429976922961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -491,7 +490,8 @@
     <MESSAGE value="v 1.2.4&#10;&#10;last step is partialy completed &#10;completed :&#10;edit CC&#10;edit shipping address&#10;&#10;not yet : &#10;view and print invoice&#10;" />
     <MESSAGE value="v 1.2.4&#10;&#10;last step is partialy completed &#10;completed :&#10;edit CC&#10;edit shipping address&#10;&#10;not yet : &#10;view and print invoice&#10;&#10;&#10;" />
     <MESSAGE value="v 1.2.5&#10;&#10;all finished + logout remove intries from db&#10;&#10;view/edit personal info , not finished&#10;&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.2.5&#10;&#10;all finished + logout remove intries from db&#10;&#10;view/edit personal info , not finished&#10;&#10;&#10;" />
+    <MESSAGE value="v 1.2.6&#10;&#10;beta Version&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.2.6&#10;&#10;beta Version&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
