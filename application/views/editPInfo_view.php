@@ -3,16 +3,13 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 
 <head>
-    <title>Register Screen | Welcome </title>
+    <title>edit info  </title>
 </head>
 <body>
 <div id='login_form'>
-    <form action='<?php echo base_url();?>index.php/register/process' method='post' name='process'>
-        <h2>User Register</h2>
+    <form action='<?php echo base_url();?>index.php/personalInfo/editInfo' method='post' name='process'>
+        <h2>User edit</h2>
         <br />
-        <?php if(! is_null($msg)) echo $msg;?>
-        <label for='username'>User Id</label>
-        <input type='text' name='userid' id='username' size='25' /><br />
 
         <label for='password'>Password</label>
         <input type='password' name='password' id='password' size='25' /><br />

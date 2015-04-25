@@ -22,6 +22,7 @@
     </form>
     <br/><br/><br/><br/>
     <a href="index.php/register">register</a>
+<!--    --><?php //redirect('Register')?>
 </div>
 </body>
 </html>

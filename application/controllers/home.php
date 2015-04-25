@@ -59,7 +59,7 @@ class Home extends CI_Controller{
 
         }else if($_POST['view_edit_personal_info']){
 
-            redirect('#');
+            redirect('personalInfo/viewInfo');
 
         }else if($_POST['logout']){
 
