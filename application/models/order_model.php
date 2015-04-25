@@ -18,7 +18,22 @@ class Order_model extends CI_Model{
         parent::__construct();
     }
 
-
+    function editShipingData($userid , $st , $city , $state , $zip){
+       // $ono = null ;
+        if($this->isOrderExists()){
+            $ono = $this->session->userdata('OrderNo');
+        }else{
+            $ono = $this->setOrder();
+        }
+        // start editing the order details
+        $sql = 'update `orders` set `shipAddress`=?,`shipCity`=?,`shipState`=?,`shipZip`= ? where `ono` = ? and `userid` = ?';
+        $query = $this->db->query($sql,array($st,$city,$state,$zip,$ono,$userid));
+        if($this->db->affected_rows() >0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     /**
      * The next methods are made to create a new order in `order` table
      * and set that order details in `odetails` table
@@ -194,11 +209,10 @@ class Order_model extends CI_Model{
      * , shipZip , zip , address, city , state
      *
      */
-    public function getShippingDetails(){
+    public function getShippingDetails($ono){
 
         // get userid from session
         $userid=$this->session->userdata('userid');
-        $ono =$this->input->post('reqOrderNo_checkOrderStatus');
 
 
         // prepare query to list all orders of that member

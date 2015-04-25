@@ -70,4 +70,18 @@ class Register_model extends CI_Model
 
 
     }
+
+    function editCC($cc , $ccType){
+        $userid = $this->session->userdata('userid');
+
+        $sql = 'update `members` set `creditcardnumber` = ? , `creditcardtype` = ? where `userid` = ?';
+        $query = $this->db->query($sql , array($cc, $ccType , $userid));
+
+        if($this->db->affected_rows() == 1 ){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
 }

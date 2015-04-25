@@ -45,7 +45,10 @@ class Invoice extends CI_Controller{
 
     public function getOrderDetails(){
         $this->load->model('order_model');
-        $ShippingDetails = $this->order_model->getShippingDetails();
+        $ono =$this->input->post('reqOrderNo_checkOrderStatus');
+
+        $ShippingDetails = $this->order_model->getShippingDetails($ono);
+
         $data['no_order'] = null;
         $orderDetails = $this->order_model->getODetails();
         // get user name

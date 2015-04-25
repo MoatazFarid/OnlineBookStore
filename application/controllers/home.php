@@ -51,7 +51,7 @@ class Home extends CI_Controller{
 
         }else if($_POST['check_out']){
 
-            redirect('#');
+            redirect('checkOut/viewCart');
 
         }else if($_POST['one_clk_check_out']){
 
