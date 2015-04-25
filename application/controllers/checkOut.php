@@ -26,6 +26,9 @@ class CheckOut extends CI_Controller{
      */
     function viewCart(){
         $userid = $this->session->userdata('userid');
+        $data['msg'] = null;
+        $data['result'] = null;
+
 
         $this->load->model('cart_model');
         $cartdata = $this->cart_model->getCartData($userid);
@@ -34,7 +37,7 @@ class CheckOut extends CI_Controller{
 
             $this->load->view('checkOut_view',$data);
         }else{
-            $this->load->view('checkOut_view');
+            $this->load->view('checkOut_view',$data);
         }
     }
 
@@ -100,16 +103,58 @@ class CheckOut extends CI_Controller{
 
     }
 
-    function process(){
+    function finalInvoice(){
+
+        ///problem
+        // it doesn't create odetails table 
+        $ono = null;
         $this->load->model('order_model');
+        if($this->order_model->isOrderExists())
+        {
+            $ono = $this->session->userdata('OrderNo');
+        }else{
+            $ono =$this->order_model->setOrder();
+        }
+
         $this->order_model->createODetails();
-        $ono = $this->session->userdata('OrderNo');
-        $ShippingDetails = $this->order_model->getShippingDetails();
+
         $data['no_order'] = null;
-        $orderDetails = $this->order_model->getODetails();
+        $orderDetails = $this->order_model->getODetails($ono);
         // get user name
         $this->load->model('login_model');
         $data['username'] = $this->login_model->getUserName();
 
+        $ShippingDetails = $this->order_model->getShippingDetails($ono);
+
+        if($ShippingDetails != null && $orderDetails != null)
+        {
+            $data['invoice'] =$ShippingDetails;
+//            insert a array of objects
+            $data['invoice2'] =$orderDetails;
+        }
+
+        else{
+            $data['no_order']= "can't get order details !! ";
+        }
+
+        $this->load->view('orderDetails_view',$data);
+//        redirect(home/index);
+
+
+    }
+    function process(){
+        $ch = $this->input->post('choise');
+        if($ch == 'newCC'){
+            $this->load->view('newCC_view');
+
+        }elseif($ch == 'newAddress'){
+            $this->load->view('newAddress_view');
+        }elseif($ch == 'prntInvo'){
+            $this->finalInvoice();
+        }else{
+            $data['msg'] =" choose 1 operation to do";
+            $this->load->view('checkOut_view',$data);
+
+        }
     }
 }

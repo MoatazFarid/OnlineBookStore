@@ -50,7 +50,7 @@ class Invoice extends CI_Controller{
         $ShippingDetails = $this->order_model->getShippingDetails($ono);
 
         $data['no_order'] = null;
-        $orderDetails = $this->order_model->getODetails();
+        $orderDetails = $this->order_model->getODetails($ono);
         // get user name
         $this->load->model('login_model');
         $data['username'] = $this->login_model->getUserName();

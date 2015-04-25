@@ -1,4 +1,7 @@
-<?php $sum=0;?>
+<?php
+    $sum=0;
+    $shipusername = $this->session->userdata('Shiping_fname').$this->session->userdata('Shiping_lname');
+?>
 <html>
 <head>
     <title>Order Details</title>
@@ -18,7 +21,7 @@
 
         <tr style="line-height: 20px;">
             <td>
-                Name: <?php echo $username; ?>
+                Name: <?php echo $shipusername; ?>
             </td>
             <td>
                 Name: <?php echo $username; ?>

@@ -46,7 +46,7 @@ class Order_model extends CI_Model{
      * `setOrder` method will return the ono (order no.)
      * of that item in cart
      */
-    private function setOrder(){
+    public function setOrder(){
         //get user id from session
         $userid =$this->session->userdata('userid');
 
@@ -77,7 +77,7 @@ class Order_model extends CI_Model{
     /**
      * This will check if there are any orders exists in orders for that user id
      */
-    private function isOrderExists(){
+    public function isOrderExists(){
         //get user id from session
         $userid =$this->session->userdata('userid');
 
@@ -100,7 +100,7 @@ class Order_model extends CI_Model{
     public function createODetails(){
         //get user id from session
         $userid =$this->session->userdata('userid');
-
+        $ono = null;
         // we will check if there are any orders exists in orders for that user id
         // if there is an order we will take order no only from user session , if no order exists ,
         /// we will create a new order and set ono in userdata
@@ -139,10 +139,9 @@ class Order_model extends CI_Model{
      * get ISBN ,Title,  $,Qty from books and odetails
      * tables
      */
-    public function getODetails(){
+    public function getODetails($ono){
         //get user id from session
         $userid =$this->session->userdata('userid');
-        $ono =$this->input->post('reqOrderNo_checkOrderStatus');
 
 
         // prepare and execute sql to gett data from cart

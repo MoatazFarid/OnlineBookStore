@@ -3,7 +3,7 @@
 <head>
     <title>Check out</title>
 </head>
-<body><?php if (is_null($msg)) { ?>
+<body><?php if (is_null($msg) ) { ?>
     <h3 style="float: left; padding-left: 10%">Current Cart Contents:</h3>
 
     <!--    drawing the get details stuff -->

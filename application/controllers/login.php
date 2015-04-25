@@ -34,6 +34,16 @@ class Login extends CI_Controller{
         }
     }
 
+    // logout
+    public function do_logout(){
+        $this->session->sess_destroy();
+        $sql1 = 'delete from `odetails` where 1';
+        $query = $this->db->query($sql1);
+        $sql = 'delete from `orders` where 1';
+        $query = $this->db->query($sql);
+
+        redirect('login');
+    }
 
 }
 ?>

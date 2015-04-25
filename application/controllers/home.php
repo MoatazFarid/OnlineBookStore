@@ -63,7 +63,7 @@ class Home extends CI_Controller{
 
         }else if($_POST['logout']){
 
-            redirect('home/do_logout');
+            redirect('login/do_logout');
 
         }
 
